@@ -20,7 +20,7 @@ public class Humain {
         return argent;
     }
     
-    private void parler(String texte) {
+    protected void parler(String texte) {
         System.out.println("(" + this.nom + ") - " + texte);
     }
     
@@ -31,11 +31,11 @@ public class Humain {
     public void boire() {
     	parler("Mmmm, un bon verre de " + this.boissonFavorite + " ! GLOUPS !");
     }
-    public void gagnerArgent(int argent) {
+    protected void gagnerArgent(int argent) {
     	this.argent += argent; 
     }
     
-    public void perdreArgent(int argent) {
+    protected void perdreArgent(int argent) {
     	this.argent -= argent; 
     }
     
